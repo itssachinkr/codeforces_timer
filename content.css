@@ -1,0 +1,21 @@
+#timer {
+  height: 80px;
+  border: 1px solid rgb(134, 131, 131);
+  border-radius: 2px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+#start {
+  margin-right: 20px;
+}
+#reset {
+  margin-left: 20px;
+}
+#timeElem {
+  font-size: 30px;
+  font-weight: 200;
+  color: #383434;
+}

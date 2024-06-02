@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "CodeForces Timer",
+  "version": "1.0",
+  "description": "Shows Count down timer while solving codeforces problems",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+  "icons": {
+    "128": "logo.png"
+  },
+  "permissions": ["tabs", "activeTab", "webNavigation", "storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://codeforces.com/problemset/problem/*",
+        "https://codeforces.com/contest/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}
